@@ -1,0 +1,28 @@
+<!DOCTYPE HTML> 
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://thymeleaf.org">
+
+	<head>
+		<title>Getting Started: Serving Web Content</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+	
+		<p> Please enter some details </p>
+		<form th:action="@{/postReg}" method="post">
+			<p>
+				<label for="firstnamesignup" class="fname" data-icon="u">First Name:</label>
+	        	<input id="firstnamesignup" name="firstnamesignup" required="required" type="text" placeholder="First" />
+	        </p>
+		    <p> 
+		         <label for="lastnamesignup" class="lname" data-icon="u">Last Name:</label>
+		         <input id="lastnamesignup" name="lastnamesignup" required="required" type="text" placeholder="Last" />
+		    </p>
+             
+             <input type="submit" />
+		</form>
+<!-- 		<button type="submit"><strong>Register</strong></button> -->
+
+	</body>
+</html>
